@@ -1,20 +1,9 @@
 INTRODUCCIÓN:
-En la actualidad vivimos en la era tecnológica, fuertemente caracterizada por la conectividad, las pantallas, 
-la inmediatez y el internet en todos los aspectos de la vida diaria. Los expertos han podido acuñar un mejor 
-término para caracterizar la confluencia de todas estas dinámicas: La Cuarta Revolución Industrial.Como la describe 
-Klaus Schwab, la Cuarta Revolución Industrial genera un mundo en el que los  sistemas de fabricación virtuales y 
-físicos cooperan entre si de una manera flexible a nivel global. 
+En la actualidad vivimos en la era tecnológica, fuertemente caracterizada por la conectividad, las pantallas, la inmediatez y el internet en todos los aspectos de la vida diaria. Los expertos han podido acuñar un mejor término para caracterizar la confluencia de todas estas dinámicas: La Cuarta Revolución Industrial.Como la describe Klaus Schwab, la Cuarta Revolución Industrial genera un mundo en el que los  sistemas de fabricación virtuales y físicos cooperan entre si de una manera flexible a nivel global. 
 
-Para lograr esta cooperación, es indispensable contar con programadores y desarrolladores, pues estos son la piedra 
-angular de la cuarta revolución industrial. Y es que debido al crecimiento exponencial que ha presentado la demanda 
-por TICs en todo el mundo, así mismo ha incrementado la necesidad de personas capacitadas para afrontar los retos y 
-desafíos que esto representa. Expertos afirman que la profesión de programador en pocos años será de las más solicitadas 
-por las empresas y compañías de todo el mundo y hoy por hoy, en los países potencias ya lo es. 
+Para lograr esta cooperación, es indispensable contar con programadores y desarrolladores, pues estos son la piedra angular de la cuarta revolución industrial. Y es que debido al crecimiento exponencial que ha presentado la demanda por TICs en todo el mundo, así mismo ha incrementado la necesidad de personas capacitadas para afrontar los retos y desafíos que esto representa. Expertos afirman que la profesión de programador en pocos años será de las más solicitadas por las empresas y compañías de todo el mundo y hoy por hoy, en los países potencias ya lo es. 
 
-Así  las cosas, resulta preponderante formar e instruir a las personas para contribuir y aprovechar todas las oportunidades 
-de desarrollo que esto trae consigo, más aun cuando se estima que el país para el  año 2025 tendrá un déficit de 112.000 
-programadores. En la actual coyuntura y como respuesta a las necesidades presentes y futuras surge el programa Misión Tic 2022, 
-el cual busca formar 100 mil programadores para el año 2022 y del cual hacemos parte activa. 
+Así  las cosas, resulta preponderante formar e instruir a las personas para contribuir y aprovechar todas las oportunidades de desarrollo que esto trae consigo, más aun cuando se estima que el país para el  año 2025 tendrá un déficit de 112.000 programadores. En la actual coyuntura y como respuesta a las necesidades presentes y futuras surge el programa Misión Tic 2022, el cual busca formar 100 mil programadores para el año 2022 y del cual hacemos parte activa. 
 
 
 NUESTRO EQUIPO:
