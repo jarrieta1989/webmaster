@@ -41,4 +41,7 @@ Para el desarrollo del proyecto se tendrá en cuenta un análisis del usuario y 
 asi como la integración de los conocimientos obtenidos en el proceso de formación MinTic. Como equipo buscamos el desarrollo de una aplicación web que cumpla 
 las expectativas del usuario, y que nos permita poner en práctica toda nuestra creatividad y las habilidades adquiridas en este proceso de aprendizaje. 
 
-
+PRESENTACION INTEGRANTES:
+  1)Mi nombre es Omar Andres Ramirez Rodriguez tengo 24 años, actualmente en decimo semestre de la carrera Licenciatura en Educacion Fisica,
+    aunque siempre me ha gustado la Informatica, el primer lenguaje de programacion que practique fue JavaScript pero aprendi lo basico, tambien practique HTML y CSS,
+    luego entre al curso de MisionTic2022, y empece a aprender Python y Java, a la par tambien hago cursos en Udemy para seguir aprendiendo.  
