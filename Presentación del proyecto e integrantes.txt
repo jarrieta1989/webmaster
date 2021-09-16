@@ -1,5 +1,5 @@
-# WebMaster
-# INTRODUCCIÓN:
+WebMaster
+INTRODUCCIÓN:
 En la actualidad vivimos en la era tecnológica, fuertemente caracterizada por la conectividad, las pantallas, la inmediatez y el internet 
 en todos los aspectos de la vida diaria. Los expertos han podido acuñar un mejor término para caracterizar la confluencia de todas estas 
 dinámicas: La Cuarta Revolución Industrial.Como la describe Klaus Schwab, la Cuarta Revolución Industrial genera un mundo en el que los
@@ -17,7 +17,7 @@ coyuntura y como respuesta a las necesidades presentes y futuras surge el progra
 programadores para el año 2022 y del cual hacemos parte activa. 
 
 
-# NUESTRO EQUIPO:
+NUESTRO EQUIPO:
 Web Master es un equipo de desarrollo de software conformado por 5 integrantes, que se destacan por su creatividad, dinamismo y capacidad de 
 resolución de problemas. Somos un equipo responsable y comprometido con la innovación y el desarrollo de soluciones tecnológicas. 
 Estamos organizados en 5 roles diferentes:
@@ -28,7 +28,7 @@ Estamos organizados en 5 roles diferentes:
   e) Scrum Master- Julio Arrieta
 
 
-# PRESENTACIÓN DEL PROYECTO: 
+PRESENTACIÓN DEL PROYECTO: 
 El objetivo principal de este proyecto es el análisis, diseño y construcción de una aplicación de software para controlar las ventas físicas y virtuales 
 de una empresa de manufactura. El proyecto se realizará siguiendo la metología SCRUM, y se entregarán 5 sprints durante su desarrollo. 
 Nuestro equipo se enfocará en aportar una solución funcional, agradable al usuario y acorde a las necesidades de la empresa interesada. 
