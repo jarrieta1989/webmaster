@@ -43,5 +43,7 @@ asi como la integración de los conocimientos obtenidos en el proceso de formaci
 las expectativas del usuario, y que nos permita poner en práctica toda nuestra creatividad y las habilidades adquiridas en este proceso de aprendizaje. 
 
 PRESENTACION INTEGRANTES:
-  1)Mi nombre es Omar Andres Ramirez Rodriguez tengo 24 años, actualmente en decimo semestre de la carrera Licenciatura en Educacion Fisica,
-    aunque siempre me ha gustado la Informatica, el primer lenguaje de programacion que practique fue JavaScript pero aprendi lo basico, tambien practique HTML y CSS,luego entre al curso de MisionTic2022, y empece a aprender Python y Java, a la par tambien hago cursos en Udemy para seguir aprendiendo.  
+  1)Mi nombre es Omar Andres Ramirez Rodriguez tengo 24 años, actualmente en decimo semestre de la carrera Licenciatura en Educacion Fisica 
+  aunque siempre me ha gustado la Informatica, el primer lenguaje de programacion que practique fue JavaScript pero aprendi lo basico, tambien practique HTML y  CSS,luego entre al curso de MisionTic2022, y empece a aprender Python y Java, a la par tambien hago cursos en Udemy para seguir aprendiendo.
+  
+  2) Mi nombre es Daniela Céspedes, actualmente soy estudiante de noveno semestre de Ingeniería biomédica, con gran interés por la programación y tecnología. Tengo buenas bases de programación en Python y C++, sin embargo, la parte de desarrollo web es algo nuevo para mi. Tengo gran interés por seguir aprendiendo y desarrollando proyectos de aplicación para fortalecer las competencias aprendidas. 
