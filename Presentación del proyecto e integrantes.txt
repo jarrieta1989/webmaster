@@ -50,3 +50,6 @@ PRESENTACION INTEGRANTES:
   2) Mi nombre es Daniela Céspedes, actualmente soy estudiante de noveno semestre de Ingeniería biomédica, con gran interés por la programación y tecnología. 
   Tengo buenas bases de programación en Python y C++, sin embargo, la parte de desarrollo web es algo nuevo para mi. Tengo gran interés por seguir aprendiendo y
   desarrollando proyectos de aplicación para fortalecer las competencias aprendidas. 
+
+  3) Soy María Fernanda Carantonio, siempre he tenido un gran gusto por la tecnología y AI, tengo conocimientos basicos en html y css. 
+     Estoy motivada a seguir aprendiendo y afianzando los conocimientos que he adquiriendo en el curso. 
