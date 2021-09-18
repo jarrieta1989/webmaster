@@ -57,3 +57,5 @@ PRESENTACION INTEGRANTES:
 
   4) Mi nombre es Julio Arrieta Piedrahita, siempre me ha gustado todo lo relacionado con la tecnología, aspiro que por medio de este programa misión tic
      adquiera conocimientos importantes, para poderlos aplicar en la resolución de problemas en el mundo real.
+     
+  5) Mi nombre es Jony Lopez, soy economista y me es de gran interes todo lo relacionado con la programación para aplicarlo a temas relacionados con mi campo de estudio. 
