@@ -19,7 +19,6 @@ body{
 
 .navbar{
    background: white;
-    /* 80% del ancho */
     width: 98%;
     /*  para que todo este centrado*/
     margin: auto;
@@ -54,8 +53,6 @@ body{
     /* quitar aspecto html */
     text-decoration: none;
     color:black;
-    /* mejor aspecto 
-    font-family: 'Prompt', sans-serif;*/
     font-size: 1.2rem;
 }
 
@@ -82,6 +79,6 @@ body{
     width: 100%;
 }
 
-#casa, #mujer, #hombre, #carrito, #login , #lupa{
+#casa, #carrito, #login , #lupa{
     font-size: 1.5rem;
 }
