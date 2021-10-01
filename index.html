@@ -21,13 +21,21 @@
             <button class="botonGenerico mainButton">Menú principal</button>
           </li>
           <li>
+            <select name="filtro" class="filtro"> 
+              <option value="0" >Filtrar por</option>
+              <option value="1">Identificador de venta</option>
+              <option value="2">Documento de Indentidad</option>
+              <option value="3">Nombre de cliente</option>
+            </select>  
             <div class="buscar">
               <input placeholder="Buscar" />
               <i class="fas fa-search botonGenerico iconoBusqueda"></i>
             </div>
           </li>
-          <li><button class="botonGenerico secondaryButton">Login</button></li>
-          <li><button class="botonGenerico mainButton">Registro</button></li>
+          <li></li>
+          <li>
+            <button class="botonGenerico secondaryButton">Login</button>
+            <button class="botonGenerico mainButton">Registro</button></li>
         </ul>
       </header>
     <main>
@@ -78,10 +86,11 @@
                         <th>Correo</th>
                         <th>Fecha venta</th>
                         <th>Vendedor</th>
-                        <th>Identificador</th>
+                        <th>Id venta</th>
                         <th>Precio unidad</th>
                         <th>Cantidad</th>
                         <th>Total</th>
+                        <th>Estado pedido</th>
                     </tr>
                     <tbody>
                         <tr>
@@ -96,6 +105,7 @@
                             <td>50000</td>
                             <td>2</td>
                             <td>100000</td>
+                            <td>Entregado</td>
                         </tr>
 
                     </tbody>
@@ -104,4 +114,4 @@
         </section>
     </main>
 </body>
-</html>
+</html> 
