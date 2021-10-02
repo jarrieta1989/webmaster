@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*.container{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0;
+
+    
+}*/
+.navbar{
+    background: white;
+     
+     width: 98%;
+     
+     margin: auto;
+     
+     padding: 15px;
+     display: flex;
+     align-items: center;
+     
+     justify-content: space-between; 
+     border: 2px solid;
+     border-radius: 10px;
+ }
+ 
+ .logo {
+     width: 80px;
+     cursor: pointer;
+ 
+ }
+ 
+ /* editar los elementos de una lista para que no se parezcan a una lista */
+ .navbar ul li{
+     /* no se muestra la viñeta */
+     list-style: none;
+     /* cada link al lado del otro */
+     display: inline-block;
+     /* margin 0 en el top y en el bottom(arriba y abajo) 20px en left y right /izq y derecha) */
+     margin: 0 20px;
+     position: relative;
+ }
+ 
+ .navbar ul li a{
+     text-decoration: none;
+     color:black;
+     font-size: 1.2rem;
+ }
+ 
+ /* animacion */
+ 
+ .navbar ul li::before{
+     content: "";
+     height: 3px;
+     width: 0;
+     background: black;
+     position: absolute;
+     left: 0;
+     bottom: -12px;
+     transition:0.4s ease-out;
+ }
+ 
+ .navbar ul li:hover::before{
+     width: 100%;
+ }
+ 
+ #casa, #carrito, #login , #lupa{
+     font-size: 1.5rem;
+ }
+
+ body {
+    height: 600px;
+    background: url("fondo.png"), linear-gradient(to bottom, #000000bc, #ffffffbc);
+    background-size: cover;
+  
+  
+  }
+  a:hover{
+      background-color: #dde9e7;
+  }
+  aside {
+  
+    float: right;
+    width: 50%;
+    padding-right: 60px;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,
+  th {
+    border: 1px solid #7c7c7cbc;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  td {
+    background-color: #dde9e7;
+  }
+  
+  th {
+    background-color: #14222f;
+    color: aliceblue;
+  }
+  
+  td:hover {
+    background-color: #989da1;
+  }
+  section {
+ 
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 60px;
+    
+  }
+  img {
+    background-size: contain;
+    width: 100px;
+    opacity: 0.7;
+  }
+  
+  .contenedor {
+    max-width: 400px;
+    margin: 0px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+
+  }
+  #cabecero {
+    background-color: #1a1e36;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  h1:hover{
+      background-color: #585a5c;
+  }
+  
+  label{
+      background-color: #3a3c3d;
+      color: #dde9e7;
+      margin-top: 5px;
+      padding: 5px;
+      border-radius: 15px 0px;
+ 
+      margin-bottom: 20px;
+  }
+  label:hover{
+      background-color: #b1b4b8;
+      color: #0f4f8f;
+  }
+  select{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  input{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+  }
+  button {
+      min-height: 50px;
+      width: 200px;
+      border-radius: 80%;
+      border-color: transparent;
+      background-color: #3d3e3f;
+      color: #fff;
+      font-size: 30px;
+      padding-bottom: 6px;
+      border-width: 0;
+      float: left;
+      margin-top: 20px;
+    }
+    button:hover{
+        background-color: #707274;
+    }
+ 
