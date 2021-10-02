@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+body{
+    background: url(./img/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+   background: white;
+    width: 98%;
+    /*  para que todo este centrado*/
+    margin: auto;
+    /* separar el navbar de la parte superior del navegador */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    /* flexbox para separar el logo de los enlaces */
+    justify-content: space-between; 
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+
+}
+
+/* editar los elementos de una lista para que no se parezcan a una lista */
+.navbar ul li{
+    /* no se muestra la viñeta */
+    list-style: none;
+    /* cada link al lado del otro */
+    display: inline-block;
+    /* margin 0 en el top y en el bottom(arriba y abajo) 20px en left y right /izq y derecha) */
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    /* quitar aspecto html */
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+}
+
+/* animacion */
+
+.navbar ul li::before{
+    /* el content debe estar vacio */
+    content: "";
+    /* aplicamos una altura */
+    height: 3px;
+    /* inical 0 para que se oculte */
+    width: 0;
+    background: black;
+    /*  */
+    position: absolute;
+    /* para que la linea este por debajo */
+    left: 0;
+    bottom: -12px;
+    transition:0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    /* 100 para que se vea la transicion */
+    width: 100%;
+}
+
+#casa, #carrito, #login , #lupa{
+    font-size: 1.5rem;
+}
