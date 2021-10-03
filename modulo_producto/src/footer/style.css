@@ -1,0 +1,14 @@
+#footer{
+
+    font-family: Helvetica,Arias;
+    color: white;
+    height: 50px;
+    background: rgba(51,51,51,0.70);
+    text-align: center;
+    margin:0px auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 800px;
+    line-height: 47px;
+    }
