@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css"> 
-    <title> WebMaster</title>
-    <script src="https://kit.fontawesome.com/fd263ea2f6.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
+import React from "react";
+import styles from "./css/roles.module.css";  
 
-    <div class="contenedor" id="cabecero">
+export function Roles(){
+    return(
+        <body>
+
+    <div className={styles.contenedor} id={styles.cabecero}>
       <h1>Gestion de Usuarios</h1>
     </div>
 
@@ -53,11 +47,11 @@
         <option value="autorizado">Autorizado</option>        
         <option value="no autorizado">No Autorizado</option>
       </select>
-      <div style="text-align: center;">
-        <button style="cursor: pointer;">Actualizar</button>
+      <div className={styles.contenedorBoton}>
+        <button className={styles.botonActualizar}>Actualizar</button>
     </div>
 
     </section>
   </body>
-  
-  </html>
+    );
+}
