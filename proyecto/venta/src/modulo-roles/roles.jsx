@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../componentes/footer/footer";
 import styles from "./css/roles.module.css";  
 
 export function Roles(){
@@ -52,6 +53,8 @@ export function Roles(){
     </div>
 
     </section>
+      <Footer/>
   </body>
     );
+    
 }

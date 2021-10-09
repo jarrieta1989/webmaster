@@ -1,5 +1,5 @@
 
-import './App.css';
+import { Footer } from './componentes/footer/footer';
 import { Roles } from './modulo-roles/roles';
 
 function App() {
