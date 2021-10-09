@@ -1,0 +1,73 @@
+
+body{
+  margin: 0px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color:black;
+
+}
+
+
+.navbar > li{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 60px;
+}
+
+.botonGenerico{
+  border: 0px;
+  padding:10px 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+
+
+}
+
+.botonGenerico:hover{
+  cursor:pointer;
+  transform: scale(1.1) ;
+}
+.mainButton{
+  background-color: white;
+  
+}
+
+
+
+.buscar{
+  background-color: white;
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.buscar > input{
+  outline: none;
+  border: 0px;
+
+}
+
+.iconoBusqueda:hover{
+  color: black;
+}
+#casa, #carrito, #login , #lupa, #ventas{
+  font-size: 1rem;
+}
