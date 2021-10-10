@@ -1,8 +1,8 @@
 
 
- body {
+ .bodyBackground {
     height: 600px;
-    background: url("fondo.png"), linear-gradient(to bottom, #000000bc, #ffffffbc);
+    background: url("/src/media/fondo.png"), linear-gradient(to bottom, #000000bc, #ffffffbc);
     background-size: cover;
   
   
@@ -83,7 +83,7 @@
       margin-bottom: 10px;
   
   }
-  button {
+  .boton {
       min-height: 50px;
       width: 200px;
       border-radius: 80%;
@@ -96,14 +96,25 @@
       float: left;
       margin-top: 20px;
     }
-    button:hover{
-        background-color: #707274;
-    }
+    
 
     .botonActualizar{
       cursor: pointer;
+      min-height: 50px;
+      width: 200px;
+      border-radius: 80%;
+      border-color: transparent;
+      background-color: #3d3e3f;
+      color: #fff;
+      font-size: 30px;
+      padding-bottom: 6px;
+      border-width: 0;
+      float: left;
+      margin-top: 20px;
     }
-
+    .botonActualizar:hover{
+        background-color: #707274;
+    }
     .contenedorBoton{
       text-align: center;
     }
