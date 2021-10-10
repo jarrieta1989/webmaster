@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar';
-import google from '../media/google.png'
-import login from '../styles/login.css'
+import google from '../media/google.png';
+import login from '../styles/login.css';
 
 function Login(){
     return(
@@ -28,7 +28,7 @@ function Login(){
                 
             </div>
         </div>
-    )
+    );
 }
 
 export default Login;
