@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import ventas from '../styles/ventas.css';
 import google from '../media/google.png';
 
-function Ventas(){
+function ventas(){
     return(
     <div>
         <Navbar/>
@@ -83,4 +83,4 @@ function Ventas(){
         </div>
     );
 }
-export default Ventas;
+export default ventas;
