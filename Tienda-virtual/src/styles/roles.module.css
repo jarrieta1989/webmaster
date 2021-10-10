@@ -2,7 +2,7 @@
 
  body {
     height: 600px;
-    background: url("fondo.png"), linear-gradient(to bottom, #000000bc, #ffffffbc);
+    background: url("../media/2.jpg"), linear-gradient(to bottom, #000000bc, #ffffffbc);
     background-size: cover;
   
   

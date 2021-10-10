@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import styles from "../media/roles.module.css";
+import styles from "../styles/roles.module.css";
 
 export function Roles() {
   return (
