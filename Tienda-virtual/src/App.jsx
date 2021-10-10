@@ -1,5 +1,9 @@
+import React from "react";
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';  
 import Login from './pages/login';
+import ModuloProducto from "./pages/ModuloProducto";
+
+
 
 
 
@@ -10,6 +14,10 @@ function App() {
         <Switch>
           <Route path='/'>
             <Login/>
+          </Route>
+
+          <Route path="/producto" exact>
+           <ModuloProducto />
           </Route>
         </Switch>
       </Router>
