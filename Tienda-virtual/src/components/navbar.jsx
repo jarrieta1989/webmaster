@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 
+=======
+import React from "react";
+import {Link} from 'react-router-dom';
+>>>>>>> 20b9d9e37ce4ab3e600bd7fac62d908ba26faed5
 import logo from '../media/logo.png';
-import '../styles/navbar.css'
+import '../styles/navbar.css';
 
 
 function Navbar() {
     return(
-        
+        <div>
         <header>
             <ul className="navbar">
             <li>
@@ -22,13 +27,16 @@ function Navbar() {
                 <i className="fas fa-search botonGenerico iconoBusqueda"></i>
                 </div>
             </li>
-            <li><button className="botonGenerico mainButton"><i className="fas fa-shopping-cart" id="carrito"> Productos</i></button></li>
+            <li className="nav-item">
+          <Link to="/producto" class="navbar-brand">Productos</Link>
+        </li>
+            <li><button className="botonGenerico mainButton"><Link to="/producto" className="fas fa-shopping-cart" id="carrito"> Productos</Link></button></li>
             <li><button className="botonGenerico mainButton"> <i class="fas fa-clipboard-check" id='ventas'></i> Ventas </button></li>
             <li><button className="botonGenerico mainButton"><i className="fas fa-user" id="login"></i>Cerrar sesión </button></li>
             </ul>
         </header> 
-      
-    )
+        </div>
+    );
     
 }
 
