@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+
+=======
 import React from "react";
 import {Link} from 'react-router-dom';
+>>>>>>> 20b9d9e37ce4ab3e600bd7fac62d908ba26faed5
 import logo from '../media/logo.png';
 import '../styles/navbar.css';
 

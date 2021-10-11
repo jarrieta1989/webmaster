@@ -4,7 +4,9 @@ import login from '../styles/login.css';
 
 function Login(){
     return(
+  
         <div>
+                  <Navbar/>
             <div class="login-container">
             <div class="login-info-container">
                 <h1 class="title"> Iniciar sesión</h1>

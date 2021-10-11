@@ -2,7 +2,11 @@
 
  .bodyBackground {
     height: 600px;
+<<<<<<< HEAD:Tienda-virtual/src/styles/roles.module.css
+    background: url("../media/2.jpg"), linear-gradient(to bottom, #000000bc, #ffffffbc);
+=======
     background: url("/src/media/fondo.png"), linear-gradient(to bottom, #000000bc, #ffffffbc);
+>>>>>>> 20b9d9e37ce4ab3e600bd7fac62d908ba26faed5:Tienda-virtual/src/media/roles.module.css
     background-size: cover;
   
   
