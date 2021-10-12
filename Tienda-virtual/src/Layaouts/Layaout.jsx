@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar'
 import React from 'react'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 const Layaout = ({children}) => {
     return (
