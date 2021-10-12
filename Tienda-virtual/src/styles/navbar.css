@@ -9,6 +9,22 @@ ul{
   margin: 0px;
 }
 
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+.mainContainer > main{
+  height: 100%;
+
+}
+
+.mainContainer > Footer{
+  background-color:black;
+}
+
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -68,6 +84,6 @@ ul{
 .iconoBusqueda:hover{
   color: black;
 }
-#casa, #carrito, #login , #lupa, #ventas{
+#roles, #carrito, #login , #lupa, #ventas{
   font-size: 1rem;
 }

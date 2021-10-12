@@ -7,18 +7,21 @@ import { Roles } from './pages/roles';
 
 
 
+
 function App() {
   return (
     <div className='App' >
       <Router>
         <Switch>
-<<<<<<< HEAD
-=======
-          <Route path="/producto" exact><ModuloProducto /></Route>
-          <Route path='/'><Login/></Route>
->>>>>>> 20b9d9e37ce4ab3e600bd7fac62d908ba26faed5
-          <Route path='/roles'><Roles/></Route>
-          <Route path='/'><Login/></Route>
+          <Route path='/productos'>
+            <ModuloProducto/>
+          </Route> 
+          <Route path='/roles'>
+            <Roles/>
+          </Route> 
+          <Route path='/'>
+            <Login/>
+          </Route>
         </Switch>
       </Router>
       
