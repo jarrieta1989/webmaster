@@ -4,7 +4,7 @@ import Login from './pages/login';
 import ModuloProducto from "./pages/ModuloProducto";
 import { Roles } from './pages/roles';
 import Ventas from './pages/ventas';
-import Layaout from "./Layaouts/Layaout";
+import Layout from "./Layouts/Layout";
 
 
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='App' >
       <Router>
-        <Layaout>
+        <Layout>
          <Switch>
           <Route path='/ventas'>
             <Ventas/>
@@ -28,7 +28,7 @@ function App() {
             <Login/>
           </Route>
          </Switch>
-        </Layaout>
+        </Layout>
       </Router>
     </div>
   );

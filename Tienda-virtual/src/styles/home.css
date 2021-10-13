@@ -1,0 +1,53 @@
+body{
+    height: 68vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../media/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.breedCardContainer{
+    display: flex;
+    
+}
+
+.breedCard{
+    margin: 15px;
+    background-color:white;
+    box-shadow: 5px 10px 5px rgb(165, 161, 161); 
+    border-radius: 10px;
+    
+}
+
+.breedTitle{
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+.contenedorImagen{
+    width: 240px;
+    height: 350px;
+    /* padre con display flex parra que funcione */
+    display: flex;
+    /* para que se separe mas el titulo de la foto */
+    margin-bottom:10px ;
+}
+
+/* la imagen mas grande cuando le paso el cursor */
+.contenedorImagen:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* contenedorimagen y la img que este debajo de contenedor imagen */
+.contenedorImagen > img{
+    /* para que se ajuste y rellene */
+    object-fit: cover;
+    /* las imagenes estandar, no se ponga mas grande que el padre  */
+    width: 100%;
+    /* bordes solo arriba */
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ; 
+}

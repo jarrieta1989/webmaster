@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import ventas from '../styles/ventas.css';
 import google from '../media/google.png';
 
