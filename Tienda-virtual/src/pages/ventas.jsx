@@ -1,12 +1,10 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import React from "react"
 import ventas from '../styles/ventas.css';
 import google from '../media/google.png';
 
 function Ventas(){
     return(
     <div>
-        <Navbar/>
             <section id="contenedorFormulario">
             <h1>Ventas</h1>
             <form>

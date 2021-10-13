@@ -8,9 +8,9 @@ const Navbar2 = () => {
     const { loginWithRedirect } = useAuth0();
     return (
              <header>
-                <ul className="navbar">
+                <ul className="navbar1">
                 <li>
-                    <img src= {logo} alt="imagen" className="logo" />
+                    <img src= {logo} alt="imagen" className="logo1" />
                 </li>
                 <li>    
                     hola
@@ -22,7 +22,7 @@ const Navbar2 = () => {
                     hola
                 </li>
                 <li>
-                    <button onClick={()=> loginWithRedirect()} className="botonGenerico mainButton">
+                    <button className="botonGenerico1 mainButton1" onClick={()=> loginWithRedirect()} >
                     <i className="fas fa-user" id="login"></i> Inicar sesión </button>
                 </li>
                 </ul>   

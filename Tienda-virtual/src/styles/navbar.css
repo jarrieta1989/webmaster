@@ -9,23 +9,23 @@ ul{
   margin: 0px;
 }
 
-.mainContainer{
+.mainContainer1{
   display: flex;
   flex-direction: column;
   height: 100vh;
 
 }
 
-.mainContainer > main{
+.mainContainer1 > main{
   height: 100%;
 
 }
 
-.mainContainer > Footer{
+.mainContainer1 > Footer{
   background-color:black;
 }
 
-.navbar{
+.navbar1{
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -34,16 +34,16 @@ ul{
 }
 
 
-.navbar > li{
+.navbar1 > li{
   display: flex;
   align-items: center;
 }
 
-.logo{
+.logo1{
   height: 60px;
 }
 
-.botonGenerico{
+.botonGenerico1{
   border: 0px;
   padding:10px 20px;
   border-radius: 10px;
@@ -52,18 +52,18 @@ ul{
 
 }
 
-.botonGenerico:hover{
+.botonGenerico1:hover{
   cursor:pointer;
   transform: scale(1.1) ;
 }
-.mainButton{
+.mainButton1{
   background-color: white;
   
 }
 
 
 
-.buscar{
+.buscar1{
   background-color: white;
   border: 1px solid;
   padding: 4px;
@@ -75,13 +75,13 @@ ul{
 }
 
 
-.buscar > input{
+.buscar1 > input{
   outline: none;
   border: 0px;
 
 }
 
-.iconoBusqueda:hover{
+.iconoBusqueda1:hover{
   color: black;
 }
 #roles, #carrito, #login , #lupa, #ventas{

@@ -1,5 +1,5 @@
 import React from 'react'
-import navbar from '../styles/navbar.css';
+import '../styles/navbar.css';
 const Footer = () => {
     return (
         <footer>

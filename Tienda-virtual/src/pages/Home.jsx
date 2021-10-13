@@ -9,25 +9,25 @@ const Home = () => {
     return (
         <main>
            <section>
-               <ul className="breedCardContainer">
+               <ul className="breedCardContainer1">
                <CardRopa imagen={jean} />
                <CardRopa imagen={pantalon} />
                <CardRopa imagen={zapatos} />
                <CardRopa imagen={zapatos} />
                <CardRopa imagen={zapatos} />
                <CardRopa imagen={zapatos} />
-               <CardRopa imagen={zapatos} />
+               
                </ul>
            </section>
+           <br/>
            <section>
-               <ul className="breedCardContainer">
+               <ul className="breedCardContainer1">
                <CardRopa imagen={jean} />
                <CardRopa imagen={pantalon} />
                <CardRopa imagen={zapatos} />
                <CardRopa imagen={zapatos} />
                <CardRopa imagen={zapatos} />
                <CardRopa imagen={zapatos} />
-               <CardRopa  imagen={zapatos} />
                </ul>
            </section>
         </main>

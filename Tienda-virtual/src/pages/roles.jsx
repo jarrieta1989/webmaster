@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import styles from "../styles/roles.module.css";
 
 export function Roles() {
   return (
     <body className={styles.bodyBackground}>
-      <Navbar/>
       <div className={styles.contenedor} id={styles.cabecero}>
         <h1>Gestion de Usuarios</h1>
       </div>
