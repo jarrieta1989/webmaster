@@ -5,7 +5,7 @@ import google from '../media/google.png';
 function Ventas(){
     return(
     <div>
-            <section id="contenedorFormulario">
+            <section id="contenedorFormulariov">
             <h1>Ventas</h1>
             <form>
                 <label for="IngresoCliente">Nombre del cliente</label>
@@ -40,7 +40,7 @@ function Ventas(){
             </form>
         </section>
 
-        <section id="contenedorTabla">
+        <section id="contenedorTablaventas">
             <h1>Registro Ventas</h1>
             <table>
                 <thead>
