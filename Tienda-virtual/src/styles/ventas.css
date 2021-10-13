@@ -99,29 +99,29 @@ ul {
 
 
 /*Ingreso datos formulario*/
-#contenedorFormulario{
+#contenedorFormulariov{
     padding: 30px;
 
 }
 
-#contenedorFormulario > h1{
+#contenedorFormulariov > h1{
     margin-bottom: 15px;
     text-align: center;  
 }
 
-#contenedorFormulario > form{
+#contenedorFormulariov > form{
     display:flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#contenedorFormulario > form>input{
+#contenedorFormulariov > form>input{
     padding: 5px;
     border-radius: 5px;
     border: 0.5px solid rgb(75, 72, 72);
 }
 
-#contenedorFormulario > form>button{
+#contenedorFormulariov > form>button{
     margin-top: 10px;
     padding: 10px;
     border-radius: 25px;
@@ -130,7 +130,7 @@ ul {
     color:white;
 }
 
-#contenedorFormulario > form>button:hover{
+#contenedorFormulariov > form>button:hover{
     cursor:pointer;
     transform: scale(0.98);
     background-color: (45,73,102,40) ;
@@ -141,13 +141,13 @@ ul {
 table{
     width: 95%;
 }
-#contenedorTabla{
+#contenedorTablaventas{
     background-color:white;
     padding: 30px;
 
 }
 
-#contenedorTabla > h1{
+#contenedorTablaventas > h1{
     margin-bottom: 15px;
     text-align: center;  
 }
