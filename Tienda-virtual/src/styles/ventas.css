@@ -19,19 +19,6 @@ ul {
     margin: 0px;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color:rgb(39, 35, 35);
-    border-bottom: 1px solid gray;
-    box-shadow: 1px 1px gray;
-  }
-
-  .navbar > li {
-    display: flex;
-    align-items: center;
-  }
 
   .logo {
     height: 80px;
