@@ -14,8 +14,8 @@ body{
 
 .breedCard1{
     margin: 13px;
-    background-color:white;
-    box-shadow: 5px 10px 5px rgb(165, 161, 161); 
+    background-color: black;
+    box-shadow: 5px 10px 5px black; 
     border-radius: 10px;
     
 }
