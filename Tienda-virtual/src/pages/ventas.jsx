@@ -1,6 +1,6 @@
 import React from "react"
-import ventas from '../styles/ventas.css';
-import google from '../media/google.png';
+import '../styles/ventas.css';
+import '../media/google.png';
 
 function Ventas(){
     return(

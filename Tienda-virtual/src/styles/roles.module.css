@@ -1,12 +1,12 @@
 
 
- .bodyBackground {
-    height: 600px;
-    background: url("../media/2.jpg"), linear-gradient(to bottom, #000000bc, #ffffffbc);
-    background-size: cover;
+ /*.bodyBackground {
+
+    background-image: url("/src/media/2.jpg");
+ 
+
   
-  
-  }
+  }/*
   a:hover{
       background-color: #dde9e7;
   }
@@ -56,7 +56,7 @@
     opacity: 0.7;
   } */
   
-
+/*
   h1:hover{
       background-color: #585a5c;
   }
@@ -139,4 +139,60 @@
       color: #fff;
       padding: 10px;
       margin-top: 30px;
+    }*/
+    
+    /**{
+      margin: 0;
+      padding: 0;
     }
+*/
+  .contenedor{
+    position: absolute;
+    left: 400px;
+  }
+
+  .divTable{
+    position: absolute;
+    left: 400px;
+    right: 50px;
+    top: 200px;
+  }
+
+  .divInputs{
+    position: absolute;
+    left: 50px;
+    top: 200px;
+  }
+
+  .contenedor h1{
+    background-color: black;
+    color: azure;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .divInputs label{
+    background-color: rgb(73, 72, 72);
+    color: aliceblue;
+    border-radius: 10px 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .divInputs button{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 300px;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 20px;
+  }
+
+  .divInputs button:hover{
+    background-color: rgb(109, 107, 107);
+    color: aliceblue;
+
+  }
