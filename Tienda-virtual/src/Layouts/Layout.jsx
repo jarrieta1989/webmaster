@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const Layaout = ({children}) => {
     return (
-        <div className= 'mainContainer'>
+        <div className= 'mainContainer1'>
             <Navbar/>
             <main> {children}</main>
             <Footer/>

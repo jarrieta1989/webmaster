@@ -1,6 +1,5 @@
 import React from 'react'
 import CardRopa from '../components/cardRopa'
-import '../styles/home.css'
 import jean from '../media/jean.jpg'
 import pantalon from '../media/pantalon.jpg'
 import zapatos from '../media/zapatos.jpg'
@@ -19,18 +18,6 @@ const Home = () => {
         <main>
            <section>
                <ul className="breedCardContainer1">
-               <CardRopa imagen={jean} />
-               <CardRopa imagen={pantalon} />
-               <CardRopa imagen={zapatos} />
-               <CardRopa imagen={pantalonbl} />
-               <CardRopa imagen={vestido} />
-               <CardRopa imagen={vestidong} />
-               
-               </ul>
-           </section>
-           <br/>
-           <section>
-               <ul className="breedCardContainer1">
                <CardRopa imagen={traje} />
                <CardRopa imagen={hombre} />
                <CardRopa imagen={formal} />
@@ -38,6 +25,16 @@ const Home = () => {
                <CardRopa imagen={vintage} />
                <CardRopa imagen={nike} />
                </ul>
+               <section>
+               <ul className="breedCardContainer1">
+               <CardRopa imagen={jean} />
+               <CardRopa imagen={pantalon} />
+               <CardRopa imagen={zapatos} />
+               <CardRopa imagen={pantalonbl} />
+               <CardRopa imagen={vestido} />
+               <CardRopa imagen={vestidong} />
+               </ul>
+           </section>
            </section>
         </main>
     )
