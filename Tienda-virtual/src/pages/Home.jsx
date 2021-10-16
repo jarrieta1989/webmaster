@@ -12,10 +12,12 @@ import formal from '../media/formal.jpeg'
 import sport from '../media/sport.jpg'
 import vintage from '../media/vintage.jpg'
 import nike from '../media/nike.jpeg'
+import yellow from '../media/yellow.jpg'
+import rojo from '../media/rojo.jpg'
 
 const Home = () => {
     return (
-        <main>
+        <main className="contenedorCards">
            <section>
                <ul className="breedCardContainer1">
                <CardRopa imagen={traje} />
@@ -24,8 +26,13 @@ const Home = () => {
                <CardRopa imagen={sport} />
                <CardRopa imagen={vintage} />
                <CardRopa imagen={nike} />
+               <CardRopa imagen={yellow} />
                </ul>
-               <section>
+            </section>  
+
+            <br/> 
+            
+            <section>
                <ul className="breedCardContainer1">
                <CardRopa imagen={jean} />
                <CardRopa imagen={pantalon} />
@@ -33,8 +40,9 @@ const Home = () => {
                <CardRopa imagen={pantalonbl} />
                <CardRopa imagen={vestido} />
                <CardRopa imagen={vestidong} />
+               <CardRopa imagen={rojo} />
                </ul>
-           </section>
+          
            </section>
         </main>
     )
