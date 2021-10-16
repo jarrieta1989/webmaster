@@ -43,6 +43,11 @@ ul{
   height: 60px;
 }
 
+.fotoLogin{
+  height: 50px;
+  border-radius: 50px;
+  font-weight: bolder;
+}
 .botonGenerico1{
   border: 0px;
   padding:10px 20px;

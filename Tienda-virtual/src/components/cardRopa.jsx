@@ -1,13 +1,12 @@
 import React from 'react'
 import '../styles/home.css'
 
-const CardRopa = ({ nombrePrenda, imagen}) => {
+const CardRopa = ({imagen}) => {
     return (
         <li className='breedCard1'>
             <div className= 'contenedorImagen1'>
-                <img src={imagen} alt={nombrePrenda}/>
+                <img src={imagen}/>
             </div>
-            {/* <span className='breedTitle'>{nombrePrenda}</span> */}
         </li>
     )
 }
