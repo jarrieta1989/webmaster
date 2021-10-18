@@ -16,7 +16,7 @@ function Navbar() {
                 <img src= {logo} alt="imagen" className="logo1" />
             </li>
             <li>
-                <img  className='fotoLogin botonGenerico' src={isAuthenticated ? user.picture:<i className="fas fa-user" id="login"></i>}/>   
+                {/* <img  className='fotoLogin botonGenerico' src={isAuthenticated ? user.picture : "photo" }/>    */}
                 <button className="botonGenerico1 mainButton1" type="submit">{isAuthenticated ? user.name: "User"}
                 </button>
             </li>

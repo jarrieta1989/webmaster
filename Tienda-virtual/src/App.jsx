@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';  
+import { useAuth0 } from "@auth0/auth0-react";
 import ModuloProducto from "./pages/ModuloProducto";
 import {Roles}  from './pages/roles';
 import Ventas from './pages/ventas';
@@ -11,11 +12,14 @@ import Home from "./pages/Home";
 
 
 function App() {
+  const {isAuthenticated} = useAuth0();
   return (
     <div className='App' >
-      <Router>
+      {isAuthenticated ? 
+
+        <Router>
         <Layout>
-         <Switch>
+        <Switch>
           <Route path='/ventas'>
             <Ventas/>
           </Route>
@@ -25,12 +29,21 @@ function App() {
           <Route path='/roles'>
             <Roles/>
           </Route>
-          <Route path='/'>
-            <Home/>
-          </Route>
-         </Switch>
+        </Switch>
         </Layout>
-      </Router>
+        </Router>
+
+      : 
+      <Router>
+      <Layout2>
+      <Switch>
+        <Route path='/'>
+          <Home/>
+        </Route>
+      </Switch>
+      </Layout2>
+      </Router>}
+      
     </div>
   );
      
