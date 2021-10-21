@@ -4,19 +4,20 @@ import logo from '../media/logo.png';
 import '../styles/navbar.css'
 
 
-
 function Navbar() {
     const { logout } = useAuth0();
-    const {user, isAuthenticated} = useAuth0();
-    return(
+    const {user,isAuthenticated} = useAuth0();
+   
+    if(localStorage.getItem("state") == "user" && isAuthenticated){
+     return(      
         
-        <header>
-            <ul className="navbar1">
+        <ul className="navbar1">
+
             <li>
-                <img src= {logo} alt="imagen" className="logo1" />
+                 <img src= {logo} alt="imagen" className="logo1" />
             </li>
             <li>
-                {/* <img  className='fotoLogin botonGenerico' src={isAuthenticated ? user.picture : "photo" }/>    */}
+                <img  className='fotoLogin botonGenerico' src={isAuthenticated ? user.picture : "photo" }/>   
                 <button className="botonGenerico1 mainButton1" type="submit">{isAuthenticated ? user.name: "User"}
                 </button>
             </li>
@@ -51,10 +52,38 @@ function Navbar() {
                 <i className= "fas fa-sign-out-alt" id="login"></i>Cerrar sesión </button>
             </li>
             </ul>
-        </header> 
-      
+        
+        
+
+        
+    
+        
+    
+ 
     )
     
+}
+else{
+  return(
+
+    <ul className="navbar1">
+        <li>
+            <img src= {logo} alt="imagen" className="logo1" />
+        </li>
+        <li>
+            <img  className='fotoLogin botonGenerico' src={isAuthenticated ? user.picture : "photo" }/>   
+            <button className="botonGenerico1 mainButton1" type="submit">{isAuthenticated ? user.name: "User"}
+            </button>
+        </li>
+        <li>
+            <button className="botonGenerico1 mainButton1" onClick={() => logout({ returnTo: window.location.origin })}>
+            <i className= "fas fa-sign-out-alt" id="login"></i>Cerrar sesión </button>
+        </li>
+    </ul>)
+        
+}
+
+
 }
 
 export default Navbar;

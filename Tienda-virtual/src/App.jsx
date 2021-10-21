@@ -11,6 +11,9 @@ import Home from "./pages/Home";
 
 
 
+
+
+
 function App() {
   const {isAuthenticated} = useAuth0();
   return (
@@ -36,10 +39,10 @@ function App() {
       : 
       <Router>
       <Layout2>
-      <Switch>
-        <Route path='/'>
-          <Home/>
-        </Route>
+      <Switch>   
+      <Route path='/'>
+        <Home/>
+      </Route>
       </Switch>
       </Layout2>
       </Router>}
