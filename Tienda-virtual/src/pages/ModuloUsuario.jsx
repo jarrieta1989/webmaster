@@ -42,7 +42,7 @@ function ModuloUsuario(){
 
   const [frameworkSeleccionado, setFrameworkSeleccionado]=useState({
     id: '',
-    nombre: '',
+    usuario: '',
     apellido: '',
 	rol: '',
     estado: ''
@@ -69,7 +69,7 @@ function ModuloUsuario(){
 
   const filtrar=(terminoBusqueda)=>{
     var resultadosBusqueda=tablaUsuarios.filter((elemento)=>{
-      if(elemento.nombre.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+      if(elemento.usuario.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
       || elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
       ){
         return elemento;
@@ -109,7 +109,7 @@ function ModuloUsuario(){
                 'Content-Type':'application/json'
             },
             body:JSON.stringify({
-				nombre:frameworkSeleccionado.nombre,
+				usuario:frameworkSeleccionado.usuario,
 				apellido:frameworkSeleccionado.apellido,
                 rol:frameworkSeleccionado.rol,
 				estado:frameworkSeleccionado.estado
@@ -135,7 +135,7 @@ function ModuloUsuario(){
             },
             body:JSON.stringify({
 				id:frameworkSeleccionado.id,
-				nombre:frameworkSeleccionado.nombre,
+				usuario:frameworkSeleccionado.usuario,
 				apellido:frameworkSeleccionado.apellido,
                 rol:frameworkSeleccionado.rol,
 				estado:frameworkSeleccionado.estado
@@ -213,7 +213,7 @@ return(
                     <input
                         className="form-control inputBuscar"
                         value={busqueda}
-                        placeholder="Búsqueda por Nombre o por Id"
+                        placeholder="Búsqueda por usuario o por Id"
                         onChange={handleChange1} />
                     <br />
                     <button className="btn btn-success">
@@ -223,7 +223,7 @@ return(
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Nombre</th>
+                                <th>usuario</th>
                                 <th>Apellido</th>
                                 <th>Rol</th>
                                 <th>Estado</th>
@@ -234,7 +234,7 @@ return(
                             {data.map(framework => (
                                 <tr key={framework.id}>
                                     <td>{framework.id}</td>
-                                    <td>{framework.nombre}</td>
+                                    <td>{framework.usuario}</td>
                                     <td>{framework.apellido}</td>
                                     <td>{framework.rol}</td>
                                     <td>{framework.estado}</td>
@@ -252,9 +252,9 @@ return(
                         <ModalHeader>Ingresar Usuarios</ModalHeader>
                         <ModalBody>
                             <div className="form-group">
-                                <label>Nombre: </label>
+                                <label>usuario: </label>
                                 <br />
-                                <input type="text" className="form-control" name="nombre" onChange={handleChange} />
+                                <input type="text" className="form-control" name="usuario" onChange={handleChange} />
                                 <br />
                                 <label>Apellido: </label>
                                 <br />
@@ -296,9 +296,9 @@ return(
                         <ModalHeader>Editar Usuarios</ModalHeader>
                         <ModalBody>
                             <div className="form-group">
-                                <label>Nombre: </label>
+                                <label>usuario: </label>
                                 <br />
-                                <input type="text" className="form-control" name="nombre" onChange={handleChange} value={frameworkSeleccionado && frameworkSeleccionado.nombre} />
+                                <input type="text" className="form-control" name="usuario" onChange={handleChange} value={frameworkSeleccionado && frameworkSeleccionado.usuario} />
                                 <br />
                                 <label>Apellido: </label>
                                 <br />
@@ -336,7 +336,7 @@ return(
                         </ModalFooter>
                     </Modal><Modal isOpen={modalEliminar}>
                         <ModalBody>
-                            ¿Estás seguro que deseas eliminar el usuario {frameworkSeleccionado && frameworkSeleccionado.nombre}?
+                            ¿Estás seguro que deseas eliminar el usuario {frameworkSeleccionado && frameworkSeleccionado.usuario}?
                         </ModalBody>
                         <ModalFooter>
                             <button className="btn btn-danger" onClick={() => peticionDelete(frameworkSeleccionado.id)}>
