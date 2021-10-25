@@ -1,53 +1,23 @@
 
-import { useAuth0 } from "@auth0/auth0-react";
-import { useState, useEffect } from 'react';
+import React from 'react'
 
-
-
-function Inicio() {
-    const {user, isAuthenticated} = useAuth0();
-    const [validUser, setValidUser] = useState(false);
-    
-    const validateUserRole = async() => {
-            const response = await fetch(`http://localhost:3001/get-user?email='${user.email}'`);
-            const jsonResponse = await response.json();
-            return jsonResponse;
-    }
-        
-    const grantAccess = async () =>{
-            let userData;
-            if(isAuthenticated) {
-              userData = await validateUserRole();
-            }
-        
-            else{
-              setValidUser(false);
-              return;
-            }
-            
-            if (userData) {
-                if (userData.role != "invited") {
-                     setValidUser(true);
-                     localStorage.setItem("state", userData.role);
-                }
-        
-                else{
-                    localStorage.setItem("state", userData.role);
-                    setValidUser(false);
-        
-                }  
-            }
-            else{
-                setValidUser(false);
-            }
-        
-    }
-    
-    useEffect(() => {
-        grantAccess();   
-    }, [isAuthenticated, validUser]);
-
+const Inicio = () => {
+    return (
+        <h1>
+           
+        </h1>
+    )
 }
 
+export default Inicio;
 
-    export default Inicio;
+const [permiso, setPermiso, setName] = useState(false);
+const getInfo = async () =>{
+    try{
+        const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+        const jsonResponse = await response.json();
+        const userData = jsonResponse.data;
+        setName(userData.nombre);
+        if(userData.role === 'user' && 'administrador') setPermiso(true);
+    }catch(e){console.log(e)}
+}

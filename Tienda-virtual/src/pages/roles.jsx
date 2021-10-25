@@ -2,12 +2,29 @@ import React from "react";
 import styles from "../styles/roles.module.css";
 import { useState, useEffect} from "react";
 import Axios from "axios";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export function Roles() {
   const [usuario, setUsuario] = useState("");
   const [rol, setRol] = useState("");
   const [estado, setEstado] = useState("");
   const [usuarios, setUsuarios] = useState([]);
+  const {user} = useAuth0();
+  const [permiso, setPermiso] = useState(false);
+
+    const getInfo = async () =>{
+        try{
+            const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+            const jsonResponse = await response.json();
+            const userData = jsonResponse;
+            if(userData.role === 'admin') setPermiso(true);
+        }catch(e){console.log(e)}
+    }
+
+  useEffect(()  =>{
+     getInfo()
+
+  },[]) 
 
   const getUsuarios = () => {
     Axios.get("http://localhost:3001/api/roles").then((response) => {
@@ -41,11 +58,11 @@ export function Roles() {
   },[])
 
   return (
-      <body>
-        <div className={styles.contenedor} id={styles.cabecero}>
-          <h1>Gestion de Usuarios</h1>
-        </div>
-
+      <header>
+         
+        <div className={styles.contenedor} id={styles.cabecero}> <h1>Gestion de Usuarios</h1></div>
+        {(permiso === true) ?
+      <>
         <aside className={styles.divTable}>
           <table>
             <tr>
@@ -102,7 +119,11 @@ export function Roles() {
                   }}>Actualizar</button>
           </div>
         </section>
-      </body>
+      </>
+        :
+
+        <h1> NO ES ADMINISTRADOR </h1> }
+    </header>
   
   );
 }
