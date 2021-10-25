@@ -3,6 +3,7 @@ import styles from "../styles/roles.module.css";
 import { useState, useEffect} from "react";
 import Axios from "axios";
 import { useAuth0 } from "@auth0/auth0-react";
+import apiBaseUrl from "../components/Api";
 
 export function Roles() {
   const [usuario, setUsuario] = useState("");
@@ -14,7 +15,8 @@ export function Roles() {
 
     const getInfo = async () =>{
         try{
-            const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+            const response = await fetch(`${apiBaseUrl}/api/usuarios?email=${user.email}`)
+            // const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
             const jsonResponse = await response.json();
             const userData = jsonResponse;
             if(userData.role === 'admin') setPermiso(true);
@@ -27,13 +29,13 @@ export function Roles() {
   },[]) 
 
   const getUsuarios = () => {
-    Axios.get("http://localhost:3001/api/roles").then((response) => {
+    Axios.get("https://tiendavirtualapi.herokuapp.com/api/usuario").then((response) => {
       setUsuarios(response.data);
     });
   };
 
   const updateUsuarios = (usuario) => {
-    Axios.put("http://localhost:3001/api/rolesActualizar", { Usuario: usuario, Rol: rol, Estado: estado}).then(
+    Axios.put("https://tiendavirtualapi.herokuapp.com/api/usuario", { Usuario: usuario, Rol: rol, Estado: estado}).then(
       (response) => {
         setUsuarios(
           usuarios.map((val) => {

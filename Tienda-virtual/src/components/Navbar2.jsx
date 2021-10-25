@@ -23,7 +23,7 @@ const Navbar2 = () => {
                 </li>
                 <li>
                     <button className="botonGenerico1 mainButton1" onClick={()=> loginWithRedirect()} >
-                    <i className="fas fa-user" id="login"></i> Inicar sesión </button>
+                    <i className="fas fa-user" id="login"></i> Iniciar sesión </button>
                 </li>
                 </ul>   
             </header>

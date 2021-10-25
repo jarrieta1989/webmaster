@@ -7,6 +7,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useState, useEffect} from "react";
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
+import apiBaseUrl from "../components/Api";
 
 
 function Ventas(){
@@ -16,7 +18,8 @@ function Ventas(){
 
     const getInfo = async () =>{
         try{
-            const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+            const response = await fetch(`${apiBaseUrl}/api/usuarios?email=${user.email}`)
+            // const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
             const jsonResponse = await response.json();
             const userData = jsonResponse;
             if(userData.role != 'invited') setPermiso(true);
@@ -246,118 +249,110 @@ function Ventas(){
     
   return(
     <>
-            <div className="cajaventas">
-                <h1>Registro Ventas</h1>
-                <section id="contenedorFormulariov"> 
-                    <label for="IngresoCliente">Nombre del cliente<input id="IngresoCliente" type="text" placeholder="Camilo Perez" onChange={(e) => setSalesCliente(e.target.value)}/></label>
-                    <label for="IngresoCorreo">Correo del cliente<input id="IngresoCorreo" type="email" placeholder="camilo@gmail.com" onChange={(e) => setSalesEmail(e.target.value)}/></label>
-                    <label for="IngresoIdentificador">Identificador del producto<input id="IngresoIdentificador" type="number" placeholder="010293"onChange={(e) => setSalesCodigo(e.target.value)}/></label>    
-                    <label for="IngresoPrecioUnitario">Precio unitario<input id="IngresoPrecioUnitario" type="number" placeholder="30000" onChange={(e) => setSalesPrecioU(e.target.value)}/></label>
-                    <label for="IngresoVendedor">Nombre del vendedor<input id="IngresoVendedor" type="text" placeholder="Luna Arias"onChange={(e) => setSalesVendedor(e.target.value)} /></label>
-                </section>
-                
-                <section id="contenedorFormulariov">
-                    <label for="IngresoDocumento">Documento del cliente<input id="IngresoDocumento" type="number" placeholder="1025486736"onChange={(e) => setSalesDocumento(e.target.value)} /></label>
-                    <label for="IngresoFecha">Fecha  de la  venta<input id="IngresoFecha" type="date"onChange={(e) => setSalesFecha(e.target.value)}/></label>
-                    <label for="IngresoCantidad">Cantidad<input id="IngresoCantidad" type="number" placeholder="3"onChange={(e) => setSalesCantidad(e.target.value)}/></label>
-                    <label for="IngresoValorTotal">Valor total<input id="IngresoValorTotal" type="number" placeholder="90000"onChange={(e) => setSalesValorT(e.target.value)}/></label>
-                    <button type="submit" onClick={regSales}  className="botong" >Guardar</button>
-                </section>
-            </div>
+          <div className="cajaventas">
 
-            <div className="cajatabla">
-                <section id="contenedorTablaventas">
-                    <h1>Consulta Ventas</h1>
-                    <div className="buscar1">
-                    <input value={busqueda} placeholder="Ingrese factura id, cliente o documento"  onChange={handleChange1} /> <i className="fas fa-search botonGenerico1 iconoBusqueda1"></i>
-                </div> 
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th>Cliente</th>
-                            <th>Documento</th>
-                            <th>Correo</th>
-                            <th>Fecha venta</th>
-                            <th>Vendedor</th>
-                            <th>Id venta</th>
-                            <th>Precio unidad</th>
-                            <th>Cantidad</th>
-                            <th>Total</th>
-                            <th>Estado pedido</th>
-                        </tr>
-                        <tbody>
-                            {sales}
-                        </tbody>
-                    </table>
-                </section>
-            </div>
+              <h1>Registro Ventas</h1><section id="contenedorFormulariov">
+                  <label for="IngresoCliente">Nombre del cliente<input id="IngresoCliente" type="text" placeholder="Camilo Perez" onChange={(e) => setSalesCliente(e.target.value)} /></label>
+                  <label for="IngresoCorreo">Correo del cliente<input id="IngresoCorreo" type="email" placeholder="camilo@gmail.com" onChange={(e) => setSalesEmail(e.target.value)} /></label>
+                  <label for="IngresoIdentificador">Identificador del producto<input id="IngresoIdentificador" type="number" placeholder="010293" onChange={(e) => setSalesCodigo(e.target.value)} /></label>
+                  <label for="IngresoPrecioUnitario">Precio unitario<input id="IngresoPrecioUnitario" type="number" placeholder="30000" onChange={(e) => setSalesPrecioU(e.target.value)} /></label>
+                  <label for="IngresoVendedor">Nombre del vendedor<input id="IngresoVendedor" type="text" placeholder="Luna Arias" onChange={(e) => setSalesVendedor(e.target.value)} /></label>
+              </section><section id="contenedorFormulariov">
+                  <label for="IngresoDocumento">Documento del cliente<input id="IngresoDocumento" type="number" placeholder="1025486736" onChange={(e) => setSalesDocumento(e.target.value)} /></label>
+                  <label for="IngresoFecha">Fecha  de la  venta<input id="IngresoFecha" type="date" onChange={(e) => setSalesFecha(e.target.value)} /></label>
+                  <label for="IngresoCantidad">Cantidad<input id="IngresoCantidad" type="number" placeholder="3" onChange={(e) => setSalesCantidad(e.target.value)} /></label>
+                  <label for="IngresoValorTotal">Valor total<input id="IngresoValorTotal" type="number" placeholder="90000" onChange={(e) => setSalesValorT(e.target.value)} /></label>
+                  <button type="submit" onClick={regSales} className="botong">Guardar</button>
+              </section>
+      <div className="cajatabla">
+              <section id="contenedorTablaventas">
+                  <h1>Consulta Ventas</h1>
+                  <div className="buscar1">
+                      <input value={busqueda} placeholder="Ingrese factura id, cliente o documento" onChange={handleChange1} /> <i className="fas fa-search botonGenerico1 iconoBusqueda1"></i>
+                  </div>
+                  <table>
+                      <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Cliente</th>
+                          <th>Documento</th>
+                          <th>Correo</th>
+                          <th>Fecha venta</th>
+                          <th>Vendedor</th>
+                          <th>Id venta</th>
+                          <th>Precio unidad</th>
+                          <th>Cantidad</th>
+                          <th>Total</th>
+                          <th>Estado pedido</th>
+                      </tr>
+                      <tbody>
+                          {sales}
+                      </tbody>
+                  </table>
+              </section>
+          </div><Modal isOpen={sModalEditar}>
+              <ModalHeader>Editar Venta</ModalHeader>
+              <ModalBody>
+                  <div className="form-group">
+                      <label>Cliente: </label>
+                      <input type="text" className="form-control" name="nombreCliente" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.CLIENTE} />
 
-            <Modal isOpen={sModalEditar}>
-      <ModalHeader>Editar Venta</ModalHeader>
-      <ModalBody>
-        <div className="form-group">
-        <label>Cliente: </label>       
-        <input type="text"  className="form-control"  name="nombreCliente" onChange={sHandleChange}value={frameworkSeleccionado && frameworkSeleccionado.CLIENTE}/>
-        
-        <label>Documento: </label>
-        <input type="text"  className="form-control"  name="correo" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.DOCUMENTO}/>
+                      <label>Documento: </label>
+                      <input type="text" className="form-control" name="correo" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.DOCUMENTO} />
 
-        <label>Correo: </label>
-        <input type="text"  className="form-control"  name="idCliente" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.EMAIL}/>
-        
-        <label>Fecha: </label>
-        <input type="date"  className="form-control"  name="fechaVenta" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.FECHA} />
-        
-        <label>Vendedor: </label>
-        <input type="text"  className="form-control"  name="vendedor" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.VENDEDOR}/>
+                      <label>Correo: </label>
+                      <input type="text" className="form-control" name="idCliente" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.EMAIL} />
 
-        <label>codigo producto: </label>          
-        <input type="text" className="form-control" name="identificador" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.CODIGO} />
+                      <label>Fecha: </label>
+                      <input type="date" className="form-control" name="fechaVenta" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.FECHA} />
 
-        <label>Precio Unitario: </label>
-        <input type="number"  className="form-control"  name="precioUnitario" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.PRECIO_UNITARIO}/>
+                      <label>Vendedor: </label>
+                      <input type="text" className="form-control" name="vendedor" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.VENDEDOR} />
 
-        <label>Cantidad: </label>
-        <input type="number"  className="form-control"  name="cantidad" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.CANTIDAD}/>
-        
-        <label>Valor Total: </label>
-        <input type="number"  className="form-control"  name="valorTotal"  onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.VALOR_TOTAL}/>
-  
-        <label>Estado: </label>
-        <select class="form-select" aria-label="Default select example" name="estado" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.ESTADO_ORDEN} >
-                  <option selected>Estado del Producto</option>
-                  <option value="En proceso">En proceso</option>
-                  <option value="Cancelada">Cancelada</option>
-                  <option value="Entregada">Entregada</option>                  
-          </select>
-                    
-          
-        </div>
-      </ModalBody>
-      <ModalFooter>
-        <button className="btn btn-primary" onClick={()=>sPeticionPut()} >Editar</button>{"   "}
-        <button className="btn btn-danger" onClick={()=>sAbrirCerrarModalEditar()}>Cancelar</button>
-      </ModalFooter>
-    </Modal>
+                      <label>codigo producto: </label>
+                      <input type="text" className="form-control" name="identificador" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.CODIGO} />
 
-    <Modal isOpen={sModalEliminar}>
-        <ModalBody>
-        ¿Estás seguro que deseas eliminar el ID venta {frameworkSeleccionado && frameworkSeleccionado.FACTURA_ID}?
-        </ModalBody>
-        <ModalFooter>
-          <button className="btn btn-danger" onClick={()=>sPeticionDelete(frameworkSeleccionado.FACTURA_ID)}>
-            Sí
-          </button>
-          <button
-            className="btn btn-secondary"
-            onClick={()=>sAbrirCerrarModalEliminar()}
-          >
-            No
-          </button>
-        </ModalFooter>
-      </Modal>
+                      <label>Precio Unitario: </label>
+                      <input type="number" className="form-control" name="precioUnitario" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.PRECIO_UNITARIO} />
 
+                      <label>Cantidad: </label>
+                      <input type="number" className="form-control" name="cantidad" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.CANTIDAD} />
+
+                      <label>Valor Total: </label>
+                      <input type="number" className="form-control" name="valorTotal" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.VALOR_TOTAL} />
+
+                      <label>Estado: </label>
+                      <select class="form-select" aria-label="Default select example" name="estado" onChange={sHandleChange} value={frameworkSeleccionado && frameworkSeleccionado.ESTADO_ORDEN}>
+                          <option selected>Estado del Producto</option>
+                          <option value="En proceso">En proceso</option>
+                          <option value="Cancelada">Cancelada</option>
+                          <option value="Entregada">Entregada</option>
+                      </select>
+
+
+                  </div>
+              </ModalBody>
+              <ModalFooter>
+                  <button className="btn btn-primary" onClick={() => sPeticionPut()}>Editar</button>{"   "}
+                  <button className="btn btn-danger" onClick={() => sAbrirCerrarModalEditar()}>Cancelar</button>
+              </ModalFooter>
+          </Modal><Modal isOpen={sModalEliminar}>
+              <ModalBody>
+                  ¿Estás seguro que deseas eliminar el ID venta {frameworkSeleccionado && frameworkSeleccionado.FACTURA_ID}?
+              </ModalBody>
+              <ModalFooter>
+                  <button className="btn btn-danger" onClick={() => sPeticionDelete(frameworkSeleccionado.FACTURA_ID)}>
+                      Sí
+                  </button>
+                  <button
+                      className="btn btn-secondary"
+                      onClick={() => sAbrirCerrarModalEliminar()}
+                  >
+                      No
+                  </button>
+              </ModalFooter>
+          </Modal>
+          </div>
         </>
 
         

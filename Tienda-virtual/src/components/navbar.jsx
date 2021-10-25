@@ -3,6 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import logo from '../media/logo.png';
 import '../styles/navbar.css'
 import { useState, useEffect } from 'react';
+import apiBaseUrl from './Api';
 
 
 
@@ -14,7 +15,8 @@ function Navbar() {
 
     const getInfo = async () =>{
         try{
-            const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+            // const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+            const response = await fetch(`${apiBaseUrl}/api/usuarios?email=${user.email}`)
             const jsonResponse = await response.json();
             const userData = jsonResponse;
             if(userData.role != 'invited') setPermiso(true);
@@ -46,12 +48,12 @@ function Navbar() {
                 </button>
                 </Link>
             </li>
-            <li>
+            {/* <li>
                 <div className="buscar1">
                 <input placeholder="Buscar" />
                 <i className="fas fa-search botonGenerico1 iconoBusqueda1"></i>
                 </div>
-            </li>
+            </li> */}
             <li>
                 <Link to='/ModuloProductos'>
                 <button className="botonGenerico1 mainButton1">

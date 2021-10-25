@@ -5,6 +5,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useAuth0 } from "@auth0/auth0-react";
+import apiBaseUrl from '../components/Api';
 
 function ModuloProducto(){
 
@@ -20,10 +21,12 @@ function ModuloProducto(){
 
   const getInfo = async () =>{
       try{
-          const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+          // const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
+          const response = await fetch(`${apiBaseUrl}/api/usuarios?email=${user.email}`)
+
           const jsonResponse = await response.json();
           const userData = jsonResponse;
-          if(userData.role === 'admin') setPermiso(true);
+          if(userData.role === 'user' && 'admin') setPermiso(true);
       }catch(e){console.log(e)}
   }
 
