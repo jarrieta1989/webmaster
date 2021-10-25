@@ -41,6 +41,7 @@ export function Roles() {
           usuarios.map((val) => {
             return val.usuario === usuario
               ? {
+                  id: val.id,
                   Usuario: val.usuario,
                   Rol: val.rol,
                   Estado: val.estado,
