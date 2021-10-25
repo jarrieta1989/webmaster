@@ -7,6 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useState, useEffect} from "react";
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 
 
 function Ventas(){
