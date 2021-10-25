@@ -2,7 +2,6 @@ import React from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';  
 import { useAuth0 } from "@auth0/auth0-react";
 import ModuloProducto from "./pages/ModuloProducto";
-// import {Roles}  from './pages/roles';
 import Layout from "./Layouts/Layout";
 import Layout2 from "./Layouts/Layout2";
 import Home from "./pages/Home";
