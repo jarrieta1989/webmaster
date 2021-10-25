@@ -244,7 +244,8 @@ function Ventas(){
 
   },[]) 
     
-  <>
+  return(
+    <>
             <div className="cajaventas">
                 <h1>Registro Ventas</h1>
                 <section id="contenedorFormulariov"> 
