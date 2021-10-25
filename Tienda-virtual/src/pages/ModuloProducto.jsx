@@ -8,7 +8,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 function ModuloProducto(){
 
-  const baseUrl="http://192.168.0.106:3001/api/producto";
+  const baseUrl="https://tiendavirtualapi.herokuapp.com/api/producto";
   const [data, setData]=useState([]);
   const [tablaUsuarios, setTablaUsuarios]= useState([]);
   const [busqueda, setBusqueda]= useState("");
