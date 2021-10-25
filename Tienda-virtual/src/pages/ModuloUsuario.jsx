@@ -27,6 +27,7 @@ function ModuloUsuario(){
             const jsonResponse = await response.json();
             const userData = jsonResponse;
             if(userData.role != 'invited') setPermiso(true);
+			
         }catch(e){console.log(e)}
     }
 
@@ -308,8 +309,8 @@ return(
                                 <br />
                                 <select class="form-select" aria-label="Default select example" name="rol" onChange={handleChange} value={frameworkSeleccionado && frameworkSeleccionado.rol}>
                                     <option selected>Estado del Usuario</option>
-                                    <option value="Admin">Admin</option>
-                                    <option value="Vendedor">Vendedor</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="vendedor">Vendedor</option>
 
                                 </select>
 

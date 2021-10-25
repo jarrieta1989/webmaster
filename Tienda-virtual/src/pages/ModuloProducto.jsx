@@ -336,7 +336,7 @@ return(
           </ModalFooter>
         </Modal></>
     :
-    <h1> SIN ROL </h1>}
+    <h1> No es Administrador </h1>}
     
 
 

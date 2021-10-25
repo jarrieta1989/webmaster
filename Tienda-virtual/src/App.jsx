@@ -23,13 +23,13 @@ function App() {
         <Router>
         <Layout>
         <Switch>
-          <Route path='/ModuloVenta'>
+          <Route path='/ventas'>
             <ModuloVenta/>
           </Route>
           <Route path='/ModuloProductos'>
             <ModuloProducto/>
           </Route>
-          <Route path='/ModuloUsuario'>
+          <Route path='/roles'>
             <ModuloUsuario/>
           </Route>
         </Switch>
