@@ -2,25 +2,30 @@ import {Link} from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from '../media/logo.png';
 import '../styles/navbar.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
 function Navbar() {
     const { logout } = useAuth0();
     const {user,isAuthenticated} = useAuth0();
-    const [permiso, setPermiso, setName] = useState(false);
+    // const [permiso, setPermiso, setName] = useState(false);
+    const [permiso, setPermiso] = useState(false);
 
     const getInfo = async () =>{
         try{
             const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
             const jsonResponse = await response.json();
-            const userData = jsonResponse.data;
-            setName(userData.name);
-            if(userData.role === 'user' && 'administrador') setPermiso(true);
+            const userData = jsonResponse;
+            if(userData.role != 'invited') setPermiso(true);
         }catch(e){console.log(e)}
     }
-  
+
+  useEffect(()  =>{
+     getInfo()
+
+  },[]) 
+
      return(      
         
         <header>
@@ -65,8 +70,8 @@ function Navbar() {
                 <i className= "fas fa-sign-out-alt" id="login"></i>Cerrar sesión </button>
             </li>
         </ul>
-
         :
+        
         <ul className="navbar1">
             <li>
                  <img src= {logo} alt="imagen" className="logo1" />
@@ -80,8 +85,8 @@ function Navbar() {
                 <button className="botonGenerico1 mainButton1" onClick={() => logout({ returnTo: window.location.origin })}>
                 <i className= "fas fa-sign-out-alt" id="login"></i>Cerrar sesión </button>
             </li>
-        </ul>    
-        }
+        </ul>    }
+        
         </header>
     
  
