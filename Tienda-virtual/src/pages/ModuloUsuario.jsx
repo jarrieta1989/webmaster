@@ -26,7 +26,7 @@ function ModuloUsuario(){
             // const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
             const jsonResponse = await response.json();
             const userData = jsonResponse;
-            if(userData.role === 'Admin') setPermiso(true);
+            if(userData.role != 'invited') setPermiso(true);
         }catch(e){console.log(e)}
     }
 
