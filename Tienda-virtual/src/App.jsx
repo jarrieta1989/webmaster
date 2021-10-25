@@ -2,11 +2,12 @@ import React from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';  
 import { useAuth0 } from "@auth0/auth0-react";
 import ModuloProducto from "./pages/ModuloProducto";
-import {Roles}  from './pages/roles';
-import Ventas from './pages/ventas';
+// import {Roles}  from './pages/roles';
 import Layout from "./Layouts/Layout";
 import Layout2 from "./Layouts/Layout2";
 import Home from "./pages/Home";
+import ModuloVenta from "./pages/ModuloVenta";
+import ModuloUsuario from "./pages/ModuloUsuario";
 
 
 
@@ -23,14 +24,14 @@ function App() {
         <Router>
         <Layout>
         <Switch>
-          <Route path='/ventas'>
-            <Ventas/>
+          <Route path='/ModuloVenta'>
+            <ModuloVenta/>
           </Route>
           <Route path='/ModuloProductos'>
             <ModuloProducto/>
           </Route>
-          <Route path='/roles'>
-            <Roles/>
+          <Route path='/ModuloUsuario'>
+            <ModuloUsuario/>
           </Route>
         </Switch>
         </Layout>

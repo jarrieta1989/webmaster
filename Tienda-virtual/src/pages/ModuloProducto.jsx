@@ -23,10 +23,10 @@ function ModuloProducto(){
       try{
           // const response = await fetch(`http://localhost:3001/get-user?email=${user.email}`)
           const response = await fetch(`${apiBaseUrl}/api/usuarios?email=${user.email}`)
-
+          // const response = await fetch(`${apiBaseUrl}/get-users?email=${user.email}`)
           const jsonResponse = await response.json();
           const userData = jsonResponse;
-          if(userData.role === 'user' && 'admin') setPermiso(true);
+          if(userData.role != 'invited') setPermiso(true);
       }catch(e){console.log(e)}
   }
 
